@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+body {
+  font-family: "Inter", sans-serif;
+  @apply bg-gray-100;
+  @apply dark:bg-gray-800;
+}
+.sidebar {
+  @apply flex;
+  @apply flex-col;
+  @apply fixed;
+  @apply inset-y-0;
+  @apply bg-white;
+  @apply dark:bg-black;
+  @apply w-20;
+  @apply md:w-72;
+  @apply transition-all;
+}
+.sidebar-wrapper {
+  @apply flex;
+  @apply flex-col;
+  @apply h-full;
+  @apply overflow-y-auto;
+}
+
+.sidebar-brand {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply text-xl;
+  @apply py-4;
+  @apply shadow-sm;
+  @apply justify-center;
+  @apply font-bold;
+  @apply text-gray-600;
+  @apply dark:text-white;
+}
+.sidebar-brand-name {
+  @apply hidden;
+  @apply md:inline-flex;
+}
+.sidebar-brand-icon {
+  @apply text-2xl;
+  @apply text-pink-400;
+  @apply dark:text-green-400;
+  @apply md:mr-2;
+}
+/* sidebar menu */
+.sidebar-menu {
+  @apply p-4;
+}
+.sidebar-menu-link {
+  @apply flex;
+  @apply p-3;
+  @apply items-center;
+  @apply text-gray-600;
+  @apply dark:text-white;
+  @apply hover:bg-pink-100;
+  @apply rounded-lg;
+  @apply hover:text-pink-800;
+  @apply dark:hover:text-green-800;
+  @apply dark:hover:bg-green-100;
+}
+.sidebar-menu-link-text {
+  @apply hidden;
+  @apply md:inline-flex;
+}
+.sidebar-menu-link-icon {
+  @apply h-8;
+  @apply w-8;
+  @apply text-2xl;
+  @apply inline-flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply mr-4;
+}
+
+.info-card {
+  @apply hidden;
+  @apply m-4;
+  @apply p-4;
+  @apply bg-pink-100;
+  @apply text-pink-800;
+  @apply rounded-lg;
+  @apply md:flex;
+  @apply flex-col;
+  @apply text-center;
+  @apply dark:bg-gray-800;
+  @apply dark:text-white;
+}
+.info-card .headline {
+  @apply text-xl;
+}
+.info-card .tagline {
+  @apply text-sm;
+}
+
+.main-content {
+  @apply pl-20;
+  @apply ml-2;
+  @apply md:pl-72;
+  @apply text-gray-800;
+  @apply dark:text-white;
+}
+@tailwind utilities;
